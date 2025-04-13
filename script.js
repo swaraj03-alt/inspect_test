@@ -1,3 +1,6 @@
+function doGet() {
+    return ContentService.createTextOutput("🛠️ This Web App is for receiving POST requests only.");
+}
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('inspectionForm');
     if (!form) {
@@ -5,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwpE23AJ1aq9CDCX7-BwrQYINKq2la6QAoIdgDAfWWQp8qMmqCYiPaXg-6swtfANWDUPQ/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyCzoZeLa9bteB6IGpPImvknMA8uUhXonvkU4DgnrQqios9YdQx6l3JX_MT0hskenIU8Q/exec';
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault(); // ⛔️ Stop the page from refreshing
