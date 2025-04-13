@@ -26,14 +26,14 @@
                 <label>Facility ID of BO: <input name="facilityId" type="text" /></label>
                 <label>Cost Center of BO: <input name="costCenter" type="text" /></label>
                 <label>Date of Last Inspection: <input name="lastInspectionDate" type="date" /></label>
-                <label>Date of Inspection: <input name="inspectionDate" type="date" /></label>
+                <label>Date of Inspection: *<input name="inspectionDate" required="" type="date" /></label>
                 <div class="nav-buttons"><button class="next-button" type="button">Next</button></div>
             </section>
             <section class="form-section" data-index="1">
                 <h2>Inspection Visit Info</h2>
                 <label>शाखा टपाल कार्यालयाच्या शेवटच्या तपासणी अधिकार्‍याचा तपशील (
-                    Name of IP/ASP): <input name="ipName" type="text" /></label>
-                <label>Date(s) of MO Visits: <input name="moVisitDates" type="text" /></label>
+                    Name of IP/ASP): * <input name="ipName" required="" type="text" /></label>
+                <label>Date(s) of MO Visits:* <input name="moVisitDates" required="" type="text" /></label>
                 <label>Name of MO: <input name="moName" type="text" /></label>
                 <label>Date of MO Visit Report (if not available): <input name="moReportDate" type="date" /></label>
                 <div class="nav-buttons"><button class="prev-button" type="button">Previous</button><button
@@ -41,11 +41,11 @@
             </section>
             <section class="form-section" data-index="2">
                 <h2>Mail Operations &amp; Cash</h2>
-                <label>Working Hours: <input name="workingHours" type="text" /></label>
-                <label>Mail Receipt Time: <input name="mailReceiptTime" type="time" /></label>
-                <label>Mail Delivery Time: <input name="mailDeliveryTime" type="time" /></label>
-                <label>Letter Box Clearing Time: <input name="letterBoxClearing" type="time" /></label>
-                <label>Mail Despatch Time: <input name="mailDespatchTime" type="time" /></label>
+                <label>Working Hours:* <input name="workingHours" required="" type="text" /></label>
+                <label>Mail Receipt Time:* <input name="mailReceiptTime" required="" type="time" /></label>
+                <label>Mail Delivery Time:* <input name="mailDeliveryTime" required="" type="time" /></label>
+                <label>Letter Box Clearing Time:* <input name="letterBoxClearing" required="" type="time" /></label>
+                <label>Mail Despatch Time:* <input name="mailDespatchTime" required="" type="time" /></label>
                 <label>Maximum Cash Balance: <input name="maxCashBalance" type="number" /></label>
                 <label>Minimum Cash Balance: <input name="minCashBalance" type="number" /></label>
                 <div class="nav-buttons"><button class="prev-button" type="button">Previous</button><button
@@ -53,16 +53,16 @@
             </section>
             <section class="form-section" data-index="3">
                 <h2>Delivery Information</h2>
-                <label>Attached Villages to BO for Delivery: <textarea name="attachedVillages"
+                <label>Attached Villages to BO for Delivery: *<textarea name="attachedVillages" required=""
                         rows="2"></textarea></label>
-                <label>Mail Arrangement: <textarea name="mailArrangement" rows="2"></textarea></label>
+                <label>Mail Arrangement:* <textarea name="mailArrangement" required="" rows="2"></textarea></label>
                 <div class="nav-buttons"><button class="prev-button" type="button">Previous</button><button
                         class="next-button" type="button">Next</button></div>
             </section>
             <section class="form-section" data-index="4">
                 <h2>Branch Staff</h2>
                 <h3>BPM</h3>
-                <label>BPM Employee ID: <input name="bpmId" type="text" /></label>
+                <label>BPM Employee ID:* <input name="bpmId" required="" type="text" /></label>
                 <label>Name of BPM: <input name="bpmName" type="text" /></label>
                 <label>TRCA of BPM: <input name="bpmTRCA" type="text" /></label>
                 <label>DOB of BPM: <input name="bpmDOB" type="date" /></label>
@@ -84,61 +84,61 @@
             </section>
             <section class="form-section" data-index="5">
                 <h2>Mail Records and Devices</h2>
-            
-                <label>ग्राम छंटाई सूची (Sorting List):
-                    <select name="sortingList">
+
+                <label>ग्राम छंटाई सूची (Sorting List):*
+                    <select required="" name="sortingList">
                         <option value="">-- निवडा --</option>
                         <option value="उपलब्ध आहे">उपलब्ध आहे</option>
                         <option value="उपलब्ध नाही">उपलब्ध नाही</option>
                     </select>
                 </label>
-            
-                <label>मार्ग सूची एंव बीट नकाशा (Beat Map):
-                    <select name="beatMap">
+
+                <label>मार्ग सूची एंव बीट नकाशा (Beat Map)*:
+                    <select required="" name="beatMap">
                         <option value="">-- निवडा --</option>
                         <option value="उपलब्ध आहे">उपलब्ध आहे</option>
                         <option value="उपलब्ध नाही">उपलब्ध नाही</option>
                     </select>
                 </label>
-            
-                <label>डाक मोहर पुस्तक (Mail Stamp Book):
-                    <select name="stampBook">
+
+                <label>डाक मोहर पुस्तक (Mail Stamp Book)*:
+                    <select required="" name="stampBook">
                         <option value="">-- निवडा --</option>
                         <option value="उपलब्ध आहे">उपलब्ध आहे</option>
                         <option value="उपलब्ध नाही">उपलब्ध नाही</option>
                     </select>
                 </label>
-            
-                <label>चुका नोदं पुस्तक (Error Book):
-                    <select name="errorBook">
+
+                <label>चुका नोदं पुस्तक (Error Book)*:
+                    <select required="" name="errorBook">
                         <option value="">-- निवडा --</option>
                         <option value="उपलब्ध आहे">उपलब्ध आहे</option>
                         <option value="उपलब्ध नाही">उपलब्ध नाही</option>
                     </select>
                 </label>
-            
-                <label>ऑर्डर बुक (Order Book):
-                    <select name="orderBook">
+
+                <label>ऑर्डर बुक (Order Book)*:
+                    <select required="" name="orderBook">
                         <option value="">-- निवडा --</option>
                         <option value="उपलब्ध आहे">उपलब्ध आहे</option>
                         <option value="उपलब्ध नाही">उपलब्ध नाही</option>
                     </select>
                 </label>
-            
+
                 <label>मागच्या वर्षाचा IR (Last Year IR)*:
-                    <select name="lastYearIR">
+                    <select required="" name="lastYearIR">
                         <option value="">-- निवडा --</option>
                         <option value="उपलब्ध आहे">उपलब्ध आहे</option>
                         <option value="उपलब्ध नाही">उपलब्ध नाही</option>
                     </select>
                 </label>
-            
+
                 <div class="nav-buttons">
                     <button class="prev-button" type="button">Previous</button>
                     <button class="next-button" type="button">Next</button>
                 </div>
             </section>
-            
+
             <section class="form-section" data-index="6">
                 <h2>Articles Received</h2>
                 <label>Articles Received - Ordinary: <input name="articlesOrdinary" type="number" /></label>
@@ -158,8 +158,10 @@
             </section>
             <section class="form-section" data-index="8">
                 <h2>Cash and Stamp Balances</h2>
-                <label>BO Wallet Balance on Day of Inspection: <input name="walletBalanceDay" type="number" /></label>
-                <label>BO Stamp Balance on Day of Inspection: <input name="stampBalance" type="number" /></label>
+                <label>BO Wallet Balance on Day of Inspection:* <input name="walletBalanceDay" required
+                        type="number" /></label>
+                <label>BO Stamp Balance on Day of Inspection: * <input name="stampBalance" required
+                        type="number" /></label>
                 <div class="nav-buttons"><button class="prev-button" type="button">Previous</button><button
                         class="next-button" type="button">Next</button></div>
             </section>
@@ -167,31 +169,31 @@
                 <h2>BO Cash Balance Verification</h2>
                 <div>
                     <h3>Entry 1</h3>
-                    <label>Date: <input name="boCashDate1" type="date" /></label>
+                    <label>Date:* <input name="boCashDate1" required="" type=" " /></label>
                     <label>Balance as per BO Record: <input name="boCashRecord1" type="number" /></label>
                     <label>Balance Acknowledged by AO: <input name="boCashAO1" type="number" /></label>
                 </div>
                 <div>
                     <h3>Entry 2</h3>
-                    <label>Date: <input name="boCashDate2" type="date" /></label>
+                    <label>Date:* <input name="boCashDate2" required="" type=" " /></label>
                     <label>Balance as per BO Record: <input name="boCashRecord2" type="number" /></label>
                     <label>Balance Acknowledged by AO: <input name="boCashAO2" type="number" /></label>
                 </div>
                 <div>
                     <h3>Entry 3</h3>
-                    <label>Date: <input name="boCashDate3" type="date" /></label>
+                    <label>Date:* <input name="boCashDate3" required="" type=" " /></label>
                     <label>Balance as per BO Record: <input name="boCashRecord3" type="number" /></label>
                     <label>Balance Acknowledged by AO: <input name="boCashAO3" type="number" /></label>
                 </div>
                 <div>
                     <h3>Entry 4</h3>
-                    <label>Date: <input name="boCashDate4" type="date" /></label>
+                    <label>Date:*<input name="boCashDate4" required="" type=" " /></label>
                     <label>Balance as per BO Record: <input name="boCashRecord4" type="number" /></label>
                     <label>Balance Acknowledged by AO: <input name="boCashAO4" type="number" /></label>
                 </div>
                 <div>
                     <h3>Entry 5</h3>
-                    <label>Date: <input name="boCashDate5" type="date" /></label>
+                    <label>Date: <input name="boCashDate5" type=" " /></label>
                     <label>Balance as per BO Record: <input name="boCashRecord5" type="number" /></label>
                     <label>Balance Acknowledged by AO: <input name="boCashAO5" type="number" /></label>
                 </div>
@@ -232,45 +234,157 @@
                     <button class="next-button" type="button">Next</button>
                 </div>
             </section>
-
             <section class="form-section" data-index="12">
                 <h2>Specimen Signature Details</h2>
-                <div>
-                    <h3>Signature 1</h3>
-                    <label>Signature Verified (Yes/No): <input name="specimenSign1Verified" type="text" /></label>
-                    <label>Photo Attached (Yes/No): <input name="specimenSign1Photo" type="text" /></label>
-                </div>
+
+                <label>
+                    Signature Verified:
+                    <select name="specimenSign1Verified">
+                        <option value="">-- Select --</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </label>
+
+                <label>
+                    Photo Attached:
+                    <select name="specimenSign1Photo">
+                        <option value="">-- Select --</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </label>
+
                 <div>
                     <h3>Signature 2</h3>
                     <label>Account No: <input name="specimenAccNo2" type="text" /></label>
-                    <label>Category: <input name="specimenCategory2" type="text" /></label>
-                    <label>Signature Verified (Yes/No): <input name="specimenSign2Verified" type="text" /></label>
-                    <label>Photo Attached (Yes/No): <input name="specimenSign2Photo" type="text" /></label>
+                    <label>
+                        Category:
+                        <select name="specimenCategory2">
+                            <option value="">-- Select Category --</option>
+                            <option value="SB">SB</option>
+                            <option value="RD">RD</option>
+                            <option value="TD">TD</option>
+                            <option value="SSA">SSA</option>
+                        </select>
+                    </label>
+                    <label>
+                        Signature Verified:
+                        <select name="specimenSign2Verified">
+                            <option value="">-- Select --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </label>
+                    <label>
+                        Photo Attached:
+                        <select name="specimenSign2Photo">
+                            <option value="">-- Select --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </label>
                 </div>
+
                 <div>
                     <h3>Signature 3</h3>
                     <label>Account No: <input name="specimenAccNo3" type="text" /></label>
-                    <label>Category: <input name="specimenCategory3" type="text" /></label>
-                    <label>Signature Verified (Yes/No): <input name="specimenSign3Verified" type="text" /></label>
-                    <label>Photo Attached (Yes/No): <input name="specimenSign3Photo" type="text" /></label>
+                    <label>
+                        Category:
+                        <select name="specimenCategory3">
+                            <option value="">-- Select Category --</option>
+                            <option value="SB">SB</option>
+                            <option value="RD">RD</option>
+                            <option value="TD">TD</option>
+                            <option value="SSA">SSA</option>
+                        </select>
+                    </label>
+                    <label>
+                        Signature Verified:
+                        <select name="specimenSign3Verified">
+                            <option value="">-- Select --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </label>
+                    <label>
+                        Photo Attached:
+                        <select name="specimenSign3Photo">
+                            <option value="">-- Select --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </label>
                 </div>
+
                 <div>
                     <h3>Signature 4</h3>
                     <label>Account No: <input name="specimenAccNo4" type="text" /></label>
-                    <label>Category: <input name="specimenCategory4" type="text" /></label>
-                    <label>Signature Verified (Yes/No): <input name="specimenSign4Verified" type="text" /></label>
-                    <label>Photo Attached (Yes/No): <input name="specimenSign4Photo" type="text" /></label>
+                    <label>
+                        Category:
+                        <select name="specimenCategory4">
+                            <option value="">-- Select Category --</option>
+                            <option value="SB">SB</option>
+                            <option value="RD">RD</option>
+                            <option value="TD">TD</option>
+                            <option value="SSA">SSA</option>
+                        </select>
+                    </label>
+                    <label>
+                        Signature Verified:
+                        <select name="specimenSign4Verified">
+                            <option value="">-- Select --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </label>
+                    <label>
+                        Photo Attached:
+                        <select name="specimenSign4Photo">
+                            <option value="">-- Select --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </label>
                 </div>
+
                 <div>
                     <h3>Signature 5</h3>
                     <label>Account No: <input name="specimenAccNo5" type="text" /></label>
-                    <label>Category: <input name="specimenCategory5" type="text" /></label>
-                    <label>Signature Verified (Yes/No): <input name="specimenSign5Verified" type="text" /></label>
-                    <label>Photo Attached (Yes/No): <input name="specimenSign5Photo" type="text" /></label>
+                    <label>
+                        Category:
+                        <select name="specimenCategory5">
+                            <option value="">-- Select Category --</option>
+                            <option value="SB">SB</option>
+                            <option value="RD">RD</option>
+                            <option value="TD">TD</option>
+                            <option value="SSA">SSA</option>
+                        </select>
+                    </label>
+                    <label>
+                        Signature Verified:
+                        <select name="specimenSign5Verified">
+                            <option value="">-- Select --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </label>
+                    <label>
+                        Photo Attached:
+                        <select name="specimenSign5Photo">
+                            <option value="">-- Select --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </label>
                 </div>
-                <div class="nav-buttons"><button class="prev-button" type="button">Previous</button><button
-                        class="next-button" type="button">Next</button></div>
+
+                <div class="nav-buttons">
+                    <button class="prev-button" type="button">Previous</button>
+                    <button class="next-button" type="button">Next</button>
+                </div>
             </section>
+
             <section class="form-section" data-index="13">
                 <h2>IPPB and Passbook Status</h2>
                 <label>IPPB QR Card Balance: <input name="ippbQRBalance" type="number" /></label>
@@ -282,15 +396,15 @@
             <section class="form-section" data-index="14">
                 <h2>SB-26 Book Entries</h2>
                 <div>
-                    <h3>Book 1</h3>
-                    <label>Book No: <input name="sb26BookNo1" type="text" /></label>
-                    <label>From Receipt No: <input name="sb26FromReceiptNo1" type="text" /></label>
-                    <label>From Date: <input name="sb26FromDate1" type="date" /></label>
-                    <label>From Amount: <input name="sb26FromAmount1" type="number" /></label>
-                    <label>To Receipt No: <input name="sb26ToReceiptNo1" type="text" /></label>
-                    <label>To Date: <input name="sb26ToDate1" type="date" /></label>
-                    <label>To Amount: <input name="sb26ToAmount1" type="number" /></label>
-                    <label>Balance Receipt: <input name="sb26Balance1" type="number" /></label>
+                    <h3>Book 1 </h3>
+                    <label>Book No:*<input name="sb26BookNo1" required="" type="text" /></label>
+                    <label>From Receipt No:* <input name="sb26FromReceiptNo1" required="" type="text" /></label>
+                    <label>From Date:* <input name="sb26FromDate1" required="" type="date" /></label>
+                    <label>From Amount:* <input name="sb26FromAmount1" required="" type="number" /></label>
+                    <label>To Receipt No:* <input name="sb26ToReceiptNo1" required="" type="text" /></label>
+                    <label>To Date:* <input name="sb26ToDate1" required="" type="date" /></label>
+                    <label>To Amount:* <input name="sb26ToAmount1" required="" type="number" /></label>
+                    <label>Balance Receipt:* <input name="sb26Balance1" required="" type="number" /></label>
                 </div>
                 <div>
                     <h3>Book 2</h3>
@@ -314,6 +428,17 @@
                 <h2>SB-26 Book Entries Continued</h2>
                 <div>
                     <h3>Book 4</h3>
+                    <label>Book No: <input name="sb26BookNo4" type="text" /></label>
+                    <label>From Receipt No: <input name="sb26FromReceiptNo4" type="text" /></label>
+                    <label>From Date: <input name="sb26FromDate4" type="date" /></label>
+                    <label>From Amount: <input name="sb26FromAmount4" type="number" /></label>
+                    <label>To Receipt No: <input name="sb26ToReceiptNo4" type="text" /></label>
+                    <label>To Date: <input name="sb26ToDate4" type="date" /></label>
+                    <label>To Amount: <input name="sb26ToAmount4" type="number" /></label>
+                    <label>Balance Receipt: <input name="sb26Balance4" type="number" /></label>
+                </div>
+                <div>
+                    <h3>Book 5</h3>
                     <label>Book No: <input name="sb26BookNo4" type="text" /></label>
                     <label>From Receipt No: <input name="sb26FromReceiptNo4" type="text" /></label>
                     <label>From Date: <input name="sb26FromDate4" type="date" /></label>
@@ -700,7 +825,7 @@
                 <h2>Five Date Cash Flow Verification</h2>
                 <div>
                     <h3>Date 1</h3>
-                    <label>Date: <input name="cashFlowDate1" type="date" /></label>
+                    <label>Date:* <input name="cashFlowDate1" required="" type="date" /></label>
                     <label>Opening Balance: <input name="openingBalance1" type="number" /></label>
                     <label>SB Deposit: <input name="sbDeposit1" type="number" /></label>
                     <label>RD Deposit: <input name="rdDeposit1" type="number" /></label>
@@ -716,7 +841,7 @@
                 </div>
                 <div>
                     <h3>Date 2</h3>
-                    <label>Date: <input name="cashFlowDate2" type="date" /></label>
+                    <label>Date:* <input name="cashFlowDate2" required="" type="date" /></label>
                     <label>Opening Balance: <input name="openingBalance2" type="number" /></label>
                     <label>SB Deposit: <input name="sbDeposit2" type="number" /></label>
                     <label>RD Deposit: <input name="rdDeposit2" type="number" /></label>
@@ -736,7 +861,7 @@
             <section class="form-section" data-index="25">
                 <div>
                     <h3>Date 3</h3>
-                    <label>Date: <input name="cashFlowDate3" type="date" /></label>
+                    <label>Date:* <input name="cashFlowDate3" required="" type="date" /></label>
                     <label>Opening Balance: <input name="openingBalance3" type="number" /></label>
                     <label>SB Deposit: <input name="sbDeposit3" type="number" /></label>
                     <label>RD Deposit: <input name="rdDeposit3" type="number" /></label>
@@ -752,7 +877,7 @@
                 </div>
                 <div>
                     <h3>Date 4</h3>
-                    <label>Date: <input name="cashFlowDate4" type="date" /></label>
+                    <label>Date:* <input name="cashFlowDate4" required="" type="date" /></label>
                     <label>Opening Balance: <input name="openingBalance4" type="number" /></label>
                     <label>SB Deposit: <input name="sbDeposit4" type="number" /></label>
                     <label>RD Deposit: <input name="rdDeposit4" type="number" /></label>
@@ -786,7 +911,7 @@
                         class="next-button" type="button">Next</button></div>
             </section>
 
-            <section class="form-section" data-index="26">
+            <!-- <section class="form-section" data-index="26">
                 <h2>Register Maintenance Verification</h2>
                 <label>BOSB Journal Maintained: <select name="bosbJournal">
                         <option value="">Select</option>
@@ -840,7 +965,7 @@
                     </select></label>
                 <div class="nav-buttons"><button class="prev-button" type="button">Previous</button><button
                         class="next-button" type="button">Next</button></div>
-            </section>
+            </section> -->
             <section class="form-section" data-index="27">
                 <h2>Inspection Officer Remarks </h2>
                 <label>Remarks / Observations by Inspecting Officer:<br />
