@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyH306qIJcT5yuSDmH1_dRKron_u0It-zk2YlqJ2Z_a6jLavF63N9GQxLvnQ54LBjhxzg/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwpE23AJ1aq9CDCX7-BwrQYINKq2la6QAoIdgDAfWWQp8qMmqCYiPaXg-6swtfANWDUPQ/exec';
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault(); // ⛔️ Stop the page from refreshing
