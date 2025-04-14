@@ -1,6 +1,3 @@
-function doGet() {
-    return ContentService.createTextOutput("🛠️ This Web App is for receiving POST requests only.");
-}
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('inspectionForm');
     if (!form) {
@@ -8,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyCzoZeLa9bteB6IGpPImvknMA8uUhXonvkU4DgnrQqios9YdQx6l3JX_MT0hskenIU8Q/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxfJNx2thU1b6ssNkkcjf1AwLfai1JEord9UpvvFl0-rdrBGKKj_O0caUFfIU_US6MeIQ/exec';
 
     form.addEventListener('submit', async (e) => {
-        e.preventDefault(); // ⛔️ Stop the page from refreshing
+        e.preventDefault();
 
         const formData = new FormData(form);
 
@@ -34,9 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-//  dropdown menu
-
-
+// Navigation (next/prev sections)
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.form-section');
     let current = 0;
@@ -55,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const inputs = currentSection.querySelectorAll('input, select, textarea');
             for (let input of inputs) {
                 if (!input.checkValidity()) {
-                    input.reportValidity(); // Show native browser message
+                    input.reportValidity();
                     return;
                 }
             }
